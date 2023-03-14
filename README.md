@@ -14,3 +14,8 @@ MONGO
 ![image](https://user-images.githubusercontent.com/98216838/224847133-9dad8973-c483-4601-acfc-41c28dd63bbe.png)
 ![image](https://user-images.githubusercontent.com/98216838/224848308-c95fc145-fc42-4f8a-9281-c66708952cd1.png)
 ![image](https://user-images.githubusercontent.com/98216838/224848678-94317252-31f3-4041-9098-ef5c4420fec0.png)
+JAVA
+![image](https://user-images.githubusercontent.com/98216838/225128369-bb63a893-eea6-4e03-b5e8-2d43f60ca956.png)
+![image](https://user-images.githubusercontent.com/98216838/225128540-b4204421-f10c-4994-ab57-8bb68664658f.png)
+GIT
+![image](https://user-images.githubusercontent.com/98216838/225128738-9053801f-896b-4984-948c-5e2456bb8967.png)
