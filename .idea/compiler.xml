@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TallerDockerArep" />
-        <module name="Taller2-AREP" />
         <module name="TallerAYparcial" />
+        <module name="Taller2-AREP" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Taller-PATRONES-ARQUITECTURALES" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

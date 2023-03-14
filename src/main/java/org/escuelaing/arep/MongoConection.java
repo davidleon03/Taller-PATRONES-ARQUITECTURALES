@@ -31,13 +31,7 @@ public class MongoConection {
         // Conexión a base de datos mongodb, Generado automaticamente por mongo
 
         ConnectionString connectionString = new ConnectionString("mongodb://myServerAdmin:password@34.200.220.118:27017/arep");
-        MongoClientSettings settings = MongoClientSettings.builder()
-                .applyConnectionString(connectionString)
-                .serverApi(ServerApi.builder()
-                        .version(ServerApiVersion.V1)
-                        .build())
-                .build();
-        mongoClient = MongoClients.create(settings);
+        mongoClient = MongoClients.create(connectionString);
         System.out.println("SE CONECTO -------------------------------------------------------------");
 
     }
