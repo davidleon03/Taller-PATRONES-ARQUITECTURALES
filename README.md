@@ -19,3 +19,8 @@ JAVA
 ![image](https://user-images.githubusercontent.com/98216838/225128540-b4204421-f10c-4994-ab57-8bb68664658f.png)
 GIT
 ![image](https://user-images.githubusercontent.com/98216838/225128738-9053801f-896b-4984-948c-5e2456bb8967.png)
+EJECUCION
+![image](https://user-images.githubusercontent.com/98216838/225138408-b11342e4-cce3-42e1-b0d6-c9fbef06d3f2.png)
+![image](https://user-images.githubusercontent.com/98216838/225137651-af29ed72-893f-48db-b72a-8eea7a68056c.png)
+PRUEBAS:
+![image](https://user-images.githubusercontent.com/98216838/225138463-d9b7a91c-4f3b-4b25-9b5c-9272729890df.png)
