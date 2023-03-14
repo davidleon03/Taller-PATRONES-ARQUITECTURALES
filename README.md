@@ -1,4 +1,6 @@
 # Taller-PATRONES-ARQUITECTURALES
+INSTANCIAS
+![image](https://user-images.githubusercontent.com/98216838/225126701-fe1c33ff-41d5-4617-bfed-7a03ec06f1ae.png)
 
 MONGO
 ![image](https://user-images.githubusercontent.com/98216838/224845177-03ae31b1-2380-46a3-981c-9aa205326a3d.png)
