@@ -12,24 +12,30 @@
  - Mongo
  - AWS
  
-INSTANCIAS 
+## Instancias
 - Procedemos a crear la siguiente arquitectura con instancias EC2 en aws
 ![image](https://user-images.githubusercontent.com/98216838/225403398-5aad9dbd-a6b9-448b-80fd-6591b6a01a7a.png)
 - Las creamos y las dejamos en ejecucion para proceder a configurarlas mas adelante
 ![image](https://user-images.githubusercontent.com/98216838/225126701-fe1c33ff-41d5-4617-bfed-7a03ec06f1ae.png)
 
-MONGO
-![image](https://user-images.githubusercontent.com/98216838/224845177-03ae31b1-2380-46a3-981c-9aa205326a3d.png)
-![image](https://user-images.githubusercontent.com/98216838/224845315-d4c281e3-fdec-452f-9ffb-94dc166907e1.png)
+## MONGO
+- Se crea la variable .repo de configuracion de mongo
 ![image](https://user-images.githubusercontent.com/98216838/224846231-23efd151-1bc7-48ec-9939-ad7d0dcceb11.png)
+- Ser procede a instalar mongo
 ![image](https://user-images.githubusercontent.com/98216838/224846297-e5234caf-3456-4655-bb63-fd121d55ba62.png)
 ![image](https://user-images.githubusercontent.com/98216838/224846378-936f81e0-ee7a-4720-86a9-7450efa295c4.png)
+- Verificamos su instalacion exitosa y la version
 ![image](https://user-images.githubusercontent.com/98216838/224846428-ae43e6b6-0128-40eb-87c0-842af8b359ed.png)
+- Configuramos para que el servicio siempre se este ejecutanto y verificamos su estado
 ![image](https://user-images.githubusercontent.com/98216838/224846761-66dfe1bd-db28-401d-98fd-a5153ce01b22.png)
+- Configuramos el archivo mongo.conf, debemos colocar en acceso 0.0.0.0 para que cualquier persona pueda acceder
 ![image](https://user-images.githubusercontent.com/98216838/224846951-4c9c996e-2d47-4b5d-a28e-e829bb29c503.png)
+- Creamos la base de datos
+
+
 ![image](https://user-images.githubusercontent.com/98216838/224847133-9dad8973-c483-4601-acfc-41c28dd63bbe.png)
 ![image](https://user-images.githubusercontent.com/98216838/224848308-c95fc145-fc42-4f8a-9281-c66708952cd1.png)
-![image](https://user-images.githubusercontent.com/98216838/224848678-94317252-31f3-4041-9098-ef5c4420fec0.png)
+
 JAVA
 ![image](https://user-images.githubusercontent.com/98216838/225128369-bb63a893-eea6-4e03-b5e8-2d43f60ca956.png)
 ![image](https://user-images.githubusercontent.com/98216838/225128540-b4204421-f10c-4994-ab57-8bb68664658f.png)
