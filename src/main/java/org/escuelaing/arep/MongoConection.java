@@ -30,7 +30,7 @@ public class MongoConection {
     public static void connect() {
         // Conexión a base de datos mongodb, Generado automaticamente por mongo
 
-        ConnectionString connectionString = new ConnectionString("mongodb://myServerAdmin:password@34.200.220.118:27017/arep");
+        ConnectionString connectionString = new ConnectionString("mongodb://myServerAdmin:password@3.239.121.215:27017/arep");
         mongoClient = MongoClients.create(connectionString);
         System.out.println("SE CONECTO -------------------------------------------------------------");
 

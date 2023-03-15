@@ -1,4 +1,5 @@
+org\escuelaing\arep\SparkWebServer.class
 org\escuelaing\arep\MongoConection.class
 org\escuelaing\arep\LogService.class
+org\escuelaing\arep\RoundRobin.class
 org\escuelaing\arep\Main.class
-org\escuelaing\arep\SparkWebServer.class
