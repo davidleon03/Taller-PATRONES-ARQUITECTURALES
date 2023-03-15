@@ -28,3 +28,6 @@ PRUEBA EN LOCAL, PERO LOG Y MONGO EN AWS
 ![image](https://user-images.githubusercontent.com/98216838/225186904-4b6884e6-0b77-4632-82f9-67c18f1fce58.png)
 
 ![image](https://user-images.githubusercontent.com/98216838/225186858-12d5f759-4199-4327-8920-10747edfdbfe.png)
+![image](https://user-images.githubusercontent.com/98216838/225194581-17574ae3-a37a-4875-9f7f-c0705dc9d685.png)
+![image](https://user-images.githubusercontent.com/98216838/225194834-a57a1bf1-6d50-4ab5-a5bb-77a906e5fcda.png)
+AWS
