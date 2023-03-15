@@ -4,8 +4,8 @@ import spark.Request;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.io.PrintWriter;
+import java.net.*;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
@@ -15,6 +15,8 @@ import static spark.Spark.staticFiles;
 import static spark.Spark.*;
 
 public class RoundRobin {
+    private static String datos;
+    private static final String USER_AGENT = "Mozilla/5.0";
     public static void main(String[] args) throws IOException {
         staticFiles.location("/public");
         get("/inicio", (req, res) -> {
@@ -22,13 +24,34 @@ public class RoundRobin {
             return null;
         });
         post("/inicio", (req,res) -> getPost(req));
+        get("/inicio/get", (req,res) -> getDatos(req));
     }
 
-    private static String getPost(Request req) throws MalformedURLException {
+    private static String getDatos(Request req) {
+        return datos;
+    }
+
+    private static String getPost(Request req) throws IOException {
         String busqueda = req.body();
-        String resultado = getAPI(busqueda, getRoundRobin());
-        System.out.println(resultado);
-        return "post sirve";
+        URL uri = new URL("http://"+ getRoundRobin() + ":4567/insert/" + busqueda.substring(1, busqueda.length()-1));
+        HttpURLConnection con = (HttpURLConnection) uri.openConnection();
+        con.setRequestMethod("GET");
+        con.setRequestProperty("User-Agent", USER_AGENT);
+        int responseCode = con.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            BufferedReader in = new BufferedReader(new InputStreamReader( con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+            System.out.println(response.toString());
+            datos = response.toString();
+            return response.toString();
+        } else {
+            return "GET no sirve";
+        }
     }
 
     private static String getRoundRobin() {
@@ -42,18 +65,5 @@ public class RoundRobin {
             return Integer.parseInt(System.getenv("PORT"));
         }
         return 4567;
-    }
-    public static String getAPI(String busqueda, String RoundRobin) throws MalformedURLException, MalformedURLException {
-        String uri = "https://"+ RoundRobin+ ":4567/insert/" + busqueda.substring(1, busqueda.length()-1);
-        System.out.println(uri);
-        URL api = new URL(uri);
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(api.openStream()))) {
-            String inputLine = reader.readLine();
-            System.out.println(inputLine);
-            return inputLine;
-        } catch (IOException x) {
-            System.err.println(x);
-        }
-        return null;
     }
 }
