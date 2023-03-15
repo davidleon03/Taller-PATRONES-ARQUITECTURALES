@@ -1,5 +1,21 @@
-# Taller-PATRONES-ARQUITECTURALES
-INSTANCIAS
+# Taller Patrones Arquitecturales | David Leon
+## Objetivos
+- Crear una instancia de MongoDB en una máquina virtual de EC2.
+- Crear un servicio REST llamado LogService que reciba una cadena, la almacene en la base de datos y responda en un objeto JSON con las 10 últimas cadenas almacenadas en la base de datos y la fecha en que fueron almacenadas.
+- Crear una aplicación web llamada APP-LB-RoundRobin que esté compuesta por un cliente web y al menos un servicio REST. El cliente web debe tener un campo y un botón que permita al usuario enviar un mensaje. Cada vez que el usuario envía un mensaje, este se lo envía al servicio REST y actualiza la pantalla con la información que este le regresa en formato JSON.
+- Crear un servicio REST que reciba la cadena, implemente un algoritmo de balanceo de cargas de Round Robin y delegue el procesamiento del mensaje y el retorno de la respuesta a cada una de las tres instancias del servicio LogService.
+## Herramientas utilizadas
+ - Maven
+ - Java 
+ - Git 
+ - Spark
+ - Mongo
+ - AWS
+ 
+INSTANCIAS 
+- Procedemos a crear la siguiente arquitectura con instancias EC2 en aws
+![image](https://user-images.githubusercontent.com/98216838/225403398-5aad9dbd-a6b9-448b-80fd-6591b6a01a7a.png)
+- Las creamos y las dejamos en ejecucion para proceder a configurarlas mas adelante
 ![image](https://user-images.githubusercontent.com/98216838/225126701-fe1c33ff-41d5-4617-bfed-7a03ec06f1ae.png)
 
 MONGO
