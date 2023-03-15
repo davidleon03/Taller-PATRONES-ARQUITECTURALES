@@ -24,3 +24,7 @@ EJECUCION
 ![image](https://user-images.githubusercontent.com/98216838/225137651-af29ed72-893f-48db-b72a-8eea7a68056c.png)
 PRUEBAS:
 ![image](https://user-images.githubusercontent.com/98216838/225138463-d9b7a91c-4f3b-4b25-9b5c-9272729890df.png)
+PRUEBA EN LOCAL, PERO LOG Y MONGO EN AWS
+![image](https://user-images.githubusercontent.com/98216838/225186904-4b6884e6-0b77-4632-82f9-67c18f1fce58.png)
+
+![image](https://user-images.githubusercontent.com/98216838/225186858-12d5f759-4199-4327-8920-10747edfdbfe.png)
