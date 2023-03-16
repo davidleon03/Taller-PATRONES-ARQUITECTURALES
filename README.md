@@ -36,23 +36,41 @@
 ![image](https://user-images.githubusercontent.com/98216838/224847133-9dad8973-c483-4601-acfc-41c28dd63bbe.png)
 ![image](https://user-images.githubusercontent.com/98216838/224848308-c95fc145-fc42-4f8a-9281-c66708952cd1.png)
 
-JAVA
+## JAVA
+- En cada una de las instancias de LogService y RoundRobin debemos tener instalado JAVA para la ejecucion del programa
 ![image](https://user-images.githubusercontent.com/98216838/225128369-bb63a893-eea6-4e03-b5e8-2d43f60ca956.png)
 ![image](https://user-images.githubusercontent.com/98216838/225128540-b4204421-f10c-4994-ab57-8bb68664658f.png)
-GIT
+## GIT
+- Igualmente debemos tener GIT en todas las instancias para poder clonar el repositorio y ejecutarlo
 ![image](https://user-images.githubusercontent.com/98216838/225128738-9053801f-896b-4984-948c-5e2456bb8967.png)
-EJECUCION
+## Configuracion para la ejecucion
+- Procedemos a configurar los grupos de seguridad de las instancias de LogService
 ![image](https://user-images.githubusercontent.com/98216838/225138408-b11342e4-cce3-42e1-b0d6-c9fbef06d3f2.png)
+- Lo ejecutamos
 ![image](https://user-images.githubusercontent.com/98216838/225137651-af29ed72-893f-48db-b72a-8eea7a68056c.png)
-PRUEBAS:
-![image](https://user-images.githubusercontent.com/98216838/225138463-d9b7a91c-4f3b-4b25-9b5c-9272729890df.png)
-PRUEBA EN LOCAL, PERO LOG Y MONGO EN AWS
-![image](https://user-images.githubusercontent.com/98216838/225186904-4b6884e6-0b77-4632-82f9-67c18f1fce58.png)
+## Pruebas de LogService
+- Realizamos pruebas de manera local de cada una de las instancias de LogService y verificamos el funcionamiento y conexion a la base de datos creada en EC2
 
+![image](https://user-images.githubusercontent.com/98216838/225138463-d9b7a91c-4f3b-4b25-9b5c-9272729890df.png)
+## Prueba RoundRobin local con LogService en EC2
+- Creamos el balanceador de cargas entre las 3 instacias creadas
+![image](https://user-images.githubusercontent.com/98216838/225186904-4b6884e6-0b77-4632-82f9-67c18f1fce58.png)
+- Verificamos su funcionamineto local
 ![image](https://user-images.githubusercontent.com/98216838/225186858-12d5f759-4199-4327-8920-10747edfdbfe.png)
 ![image](https://user-images.githubusercontent.com/98216838/225194581-17574ae3-a37a-4875-9f7f-c0705dc9d685.png)
 ![image](https://user-images.githubusercontent.com/98216838/225194834-a57a1bf1-6d50-4ab5-a5bb-77a906e5fcda.png)
-AWS
+## RoundRobin en AWS
+- Montamos RoundRobin en AWS y se verifica su funcionamiento
 ![image](https://user-images.githubusercontent.com/98216838/225195391-e75cfde6-0f8f-42e3-8217-cbe2b9229ea8.png)
 ![image](https://user-images.githubusercontent.com/98216838/225195488-e2498f80-df89-4a76-9709-923ffc80d159.png)
 ![image](https://user-images.githubusercontent.com/98216838/225195775-9aea58d2-cf42-4cc0-9a54-9ad808c15394.png)
+## Documentacion
+
+Para crear la documentación del proyecto se hace con el siguiente comando:
+    
+    mvn javadoc:javadoc
+    
+
+## Autor
+
+* **David Leon**
