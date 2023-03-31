@@ -20,7 +20,7 @@ public class RoundRobin {
     public static void main(String[] args) throws IOException {
         staticFiles.location("/public");
         get("/inicio", (req, res) -> {
-            res.redirect("/public/index.html");
+            res.redirect("/index.html");
             return null;
         });
         post("/inicio", (req,res) -> getPost(req));
@@ -33,6 +33,7 @@ public class RoundRobin {
 
     private static String getPost(Request req) throws IOException {
         String busqueda = req.body();
+        System.out.println(busqueda);
         URL uri = new URL("http://"+ getRoundRobin() + ":4567/insert/" + busqueda.substring(1, busqueda.length()-1));
         HttpURLConnection con = (HttpURLConnection) uri.openConnection();
         con.setRequestMethod("GET");
@@ -46,6 +47,7 @@ public class RoundRobin {
                 response.append(inputLine);
             }
             in.close();
+            System.out.println("------------------------");
             System.out.println(response.toString());
             datos = response.toString();
             return response.toString();
